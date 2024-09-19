@@ -5,55 +5,50 @@
 }
 
 body {
-    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p1/3524442-efeito-de-fundo-branco-vetor.jpg);
+    /* background-image: url(https://i.pinimg.com/736x/dd/c8/0d/ddc80d33c3de8bad443fc49ea9e693d2.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
+    background-repeat: no-repeat; */
+    background: rgb(251, 63, 63);
+    background: radial-gradient(circle, rgba(251, 63, 63, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: space-between;
+    align-items: start;
+    align-content: space-between ;
     margin: 10px;
-    max-width: 1400px;
+    /* max-width: 1800px; */
 }
 
 .container .card {
+    color: #fff;
+    /* align-content: space-around; */
+    /* backdrop-filter: blur(10px); */
     text-align: center;
-    background: #00000048;
-    border: 2px solid #000;
+    background-color: rgba(15, 15, 15, 0.74);
+    border: 2px solid rgb(253, 252, 252);
     border-radius: 15px;
     padding: 1em 0;
     margin: 15px;
     width: 22%;
-    max-width: 330px;
-    min-width: 320px;
+    max-width: 301px;
+    min-width: 295px;
     min-height: 710px;
-    box-shadow: 10px 10px 5px rgb(0, 0, 0, 0.6);
-}
-
-
-.container:hover> :not(:hover) {
-    filter: blur(10px);
+    max-height: 710px;
 }
 
 
 .container .card h1 {
+    color: #000;
     font-size: 2em;
     margin: 15px 0 15px 0;
     text-transform: uppercase;
     font-weight: bolder;
     text-shadow: #000;
-    background: #00000020;
-}
-
-.card:hover {
-    padding: 20px;
+    background: #ffffffc4;
 }
 
 img {
@@ -68,7 +63,8 @@ img {
 
 .card:hover img {
     transition: 250ms ease-in-out;
-    transform: scale(1.05);
+    transform: scale(1.08);
+    box-shadow: 0px 0px 30px #fff;
 }
 
 p {
